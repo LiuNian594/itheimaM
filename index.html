@@ -1,29 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
-    <link rel="stylesheet" href="../darkhorse/css" type="text/css" />
+    <title>黑马商城</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bese.css">
+    <style>
+        @media screen and (max-width: 540px){
+            .prdouct_box{
+                padding-top: 10px;
+          }
+          .hm_sk .product_box_con>ul>li>a{
+            height: 80px;
+          }
 
-
-</head>
+        }
+        @media (min-width: 541px) and (max-width: 960px){
+            .prdouct_box{
+                padding-top: 150px;
+            }
+        }
+        @media screen and (min-width: 961px){
+            .prdouct_box{
+                padding-top: 40px;
+            }
+            .hm_sk .product_box_con>ul>li>a{
+            height: 450px;
+          }
+        }
+    </style>
+</head lang="en">
 
 <body>
-    <header class="hm_header">
-        <div class="hm_header_box">
+    <!-- 搜索栏 -->
+    <header class="header">
+        <div class="header_box">
             <a href="#" class="icon_logo"></a>
             <!-- 搜索按钮 -->
             <form action="#">
-                <span class="icon_search"></span>
-                <input type="search" placeholder="提示站位" />
+                <span class="icon_search"><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=65264689,2445065451&fm=26&gp=0.jpg "
+                        width="25px" height="25px"></span>
+                <input type="search" placeholder="点击输入商品搜索" />
             </form>
             <a href="#" class="login">登录</a>
         </div>
     </header>
     <!-- 轮播图 -->
+    <div class="slider">
+        <div id="images">
+            <a href="#" class="displayImg"><img src="images/01.jpg" alt=""></a>
+            <a href="#" class="hiddenImg"><img src="images/02.jpg" alt=""></a>
+            <a href="#" class="hiddenImg"><img src="images/03.jpg" alt=""></a>
+            <a href="#" class="hiddenImg"><img src="images/04.jpg" alt=""></a>
+            <a href="#" class="hiddenImg"><img src="images/05.jpg" alt=""></a>
+            <a href="#" class="hiddenImg"><img src="images/06.jpg" alt=""></a>
+            <a href="#" class="hiddenImg"><img src="images/07.jpg" alt=""></a>
+            <a href="#" class="hiddenImg"><img src="images/08.jpg" alt=""></a>
+        </div>
+        <div>
+            <p class="leftButton btn">上一张</p>
+            <p class="rightButton btn"> 下一张</p>
+        </div>
+        <ul class="txt-box">
+            <li class="txtItem normalColor">
+                <p>QF</p>
+                <p>YT</p>
+            </li>
+            <li class="txtItem normalColor">
+                <p>QF</p>
+                <p>YT</p>
+            </li>
+            <li class="txtItem normalColor">
+                <p>QF</p>
+                <p>YT</p>
+            </li>
+            <li class="txtItem normalColor">
+                <p>QF</p>
+                <p>YT</p>
+            </li>
+            <li class="txtItem normalColor">
+                <p>QF</p>
+                <p>YT</p>
+            </li>
+            <li class="txtItem normalColor">
+                <p>QF</p>
+                <p>YT</p>
+            </li>
+            <li class="txtItem normalColor">
+                <p>QF</p>
+                <p>YT</p>
+            </li>
+            <li class="txtItem normalColor">
+                <p>QF</p>
+                <p>YT</p>
+            </li>
+        </ul>
+    </div>
+    <script src="js/test2.js"></script>
+
+    <!-- 商品分类 -->
+
+    <nav class="hm-nav">
+        <ul class="clearfix">
+            <li>
+                <a href="category.html">
+                    <img src="images/09.png" alt="">
+                    <p>分类查询</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/12.png" alt="">
+                    <p>黑马超市</p>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <img src="images/14.png" alt="">
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/11.png" alt="">
+                    <p>个人中心</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/13.png" alt="">
+                    <p>充值中心</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/16.png" alt="">
+                    <p>黑马理财</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/15.png" alt="">
+                    <p>黑马培训</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/10.png" alt="">
+                    <p>黑马圈子</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 商品和秒杀区 -->
+    <main class="hm_product">
+        <!-- 商品盒子 -->
+        <section class="hm_product_box hm_sk">
+            <!-- 头部 -->
+            <div class="product_box_tit no_boder">
+                <div class="f_left m_110">
+                    <span class="sk_icon"></span>
+                    <span class="sk_name m_110">掌上秒杀</span>
+                    <div class=" sk_time m_110">
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="f_right m_r10"><a href="#">更多</a></div>
+            </div>
+
+
+            <div>
+                <section>
+                    <!-- 商品盒子 -->
+                    <section class="prdouct_box">
+                        <div class=" product_box_tit">
+                            <h3>黑马超市</h3>
+                        </div>
+                        <div class="product_box_con clearfix">
+                            <a href="#" class="f_left w_50 b_right"><img src="images/TB10dirkxjaK1RjSZFASuvdLFXa.jpg_288x480Q75s0[1].jpg"
+                                    alt=""></a>
+                            <a href="#" class="f_right w_50 b_bottom"><img src="images/TB1aqj2l7voK1RjSZFNSuwxMVXa.jpg_288x480Q75s0[1].jpg"
+                                    alt=""></a>
+                            <a href="#" class="f_right w_50 b_bottom"><img src="images/TB1dKhdjxTpK1RjSZR0XXbEwXXa.jpg_288x480Q75s0[1].jpg"
+                                    alt=""></a>
+                            <a href="#" class="f_right w_50 b_bottom"><img src="images/TB1Pk5_lSzqK1RjSZPcSuvTepXa.jpg_288x480Q75s0[1].jpg"
+                                    alt=""></a>
+                        </div>
+                    </section>
+                </section>
+            </div>
+
+            <div class="product_box_con">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#"><img src="images/O1CN011LUM8iVYF53c3Q6_!!0-juitemmedia.jpg_460x460Q90[1].jpg" alt=""></a>
+                        <p>&yen;10.00</p>
+                        <p>&yen;100.00</p>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="images/O1CN011LUM8raR9iPgoub_!!0-juitemmedia.jpg_460x460Q90[1].jpg" alt=""></a>
+                        <p>&yen;10.00</p>
+                        <p>&yen;100.00</p>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="images/O1CN011LUM8uLtDuga8w5_!!0-juitemmedia.jpg_460x460Q90[1].jpg" alt=""></a>
+                        <p>&yen;10.00</p>
+                        <p>&yen;100.00</p>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="images/O1CN011LUM9KyuX2wuoRu_!!0-juitemmedia.jpg_400x400Q90[1].jpg" alt=""></a>
+                        <p>&yen;10.00</p>
+                        <p>&yen;100.00</p>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="images/O1CN011LUM9M4WZe5r9wo_!!0-juitemmedia.jpg_460x460Q90[1].jpg" alt=""></a>
+                        <p>&yen;10.00</p>
+                        <p>&yen;100.00</p>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="images/O1CN01r2xKcV1LUM9MHatAT_!!0-juitemmedia.jpg_460x460Q90[1].jpg"alt=""></a>
+                        <p>&yen;10.00</p>
+                        <p>&yen;100.00</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    </div>
 
 </body>
 
